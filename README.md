@@ -5,7 +5,3 @@
 ## Expo Snack Link
 You can view and run the project directly here:
 [Click here to open Expo Snack](https://snack.expo.dev/@youssefabobaker/todolist_youssef-abobaker-mahmoud)
-
-## Color Palette
-- Background: #0F172A
-- Accent: #38BDF8
