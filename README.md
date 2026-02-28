@@ -4,4 +4,4 @@
 
 ## Expo Snack Link
 You can view and run the project directly here:
-[Click here to open Expo Snack](https://snack.expo.dev/@youssefabobaker/todolist_youssef-abobaker-mahmoud)
+[Click here to open Expo Snack](https://snack.expo.dev/@youssefabobaker/mc_task_01_todolist)
