@@ -12,7 +12,6 @@ import {
   View,
 } from "react-native";
 
-// تعريف شكل البيانات للمهمة (Type Definition)
 interface TaskItem {
   id: string;
   text: string;
@@ -23,7 +22,6 @@ export default function TodoAssignment() {
   const [task, setTask] = useState<string>("");
   const [taskList, setTaskList] = useState<TaskItem[]>([]);
 
-  // إضافة مهمة
   const handleAdd = () => {
     if (task.trim().length > 0) {
       const newTask: TaskItem = {
@@ -37,12 +35,10 @@ export default function TodoAssignment() {
     }
   };
 
-  // حذف مهمة
   const handleDelete = (id: string) => {
     setTaskList(taskList.filter((item) => item.id !== id));
   };
 
-  // تغيير الحالة (تمت أو لأ)
   const toggleStatus = (id: string) => {
     setTaskList(
       taskList.map((item) =>
@@ -55,13 +51,11 @@ export default function TodoAssignment() {
     <View style={styles.container}>
       <StatusBar barStyle="light-content" />
 
-      {/* Header Section */}
       <View style={styles.header}>
         <Text style={styles.mainTitle}>My Tasks</Text>
         <Text style={styles.dateText}>{new Date().toDateString()}</Text>
       </View>
 
-      {/* Tasks List */}
       <FlatList
         data={taskList}
         keyExtractor={(item) => item.id}
@@ -92,7 +86,6 @@ export default function TodoAssignment() {
         contentContainerStyle={{ paddingBottom: 100 }}
       />
 
-      {/* Input Section */}
       <KeyboardAvoidingView
         behavior={Platform.OS === "ios" ? "padding" : "height"}
         style={styles.inputArea}
@@ -115,7 +108,7 @@ export default function TodoAssignment() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#0F172A", // Dark Navy Blue
+    backgroundColor: "#0F172A", 
     paddingTop: 60,
     paddingHorizontal: 20,
   },
@@ -154,7 +147,7 @@ const styles = StyleSheet.create({
     height: 22,
     borderRadius: 11,
     borderWidth: 2,
-    borderColor: "#38BDF8", // Light Blue
+    borderColor: "#38BDF8", 
     marginRight: 12,
   },
   checkedCircle: {
