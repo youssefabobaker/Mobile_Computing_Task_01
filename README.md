@@ -1,4 +1,4 @@
-# Mobile_Computing_Task_01
+# MC_Task_01
 **Name:** Youssef Abobaker Mahmoud Ahmed
 **Project:** To-Do List App
 
